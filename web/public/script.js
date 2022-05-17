@@ -21,7 +21,7 @@ class Moon {
 
 	async getMoonPhase() {
 		let wttrMap = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘'];
-		let emoji = await fetch('http://wttr.in/moon?format=%m')
+		let emoji = await fetch('https://wttr.in/moon?format=%m')
 		.then( response => response.text() );
 		return wttrMap.indexOf(emoji);
 	}
