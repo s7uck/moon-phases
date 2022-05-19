@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'Segoe Fluent Icons';
+	src: url('Segoe_Fluent_Icons.ttf');
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+
+	background: black;
+}
+
+#moon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	max-height: 50vh;
+
+	transform: translate(-50%, -50%);
+}
+
+header {
+	display: flex;
+	align-items: center;
+
+	margin: 8px;
+	padding-inline: 8px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+a {
+	text-decoration: none;
+
+	color: #86817B;
+}
+
+icon,
+[icon]::before {
+	content: attr(icon);
+	font-family: 'Segoe Fluent Icons';
+	font-size: .9em;
+	vertical-align: middle;
+}
+
+@media only screen and ( max-width: 800px ) {
+	[icon] {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		text-align: center;
+	}
+}
+
+time {
+	font-family: monospace;
+}
+
+@supports (-webkit-background-clip: text) {
+	time {
+		background: linear-gradient( to left, #86817B, #484848 );
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+	}
+}
+
+header > time {
+	margin-left: auto;
+}
