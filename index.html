@@ -6,29 +6,23 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="color-scheme" content="dark">
 	<title>Moon Phases</title>
-	<link rel="stylesheet" href="web/style.css">
-	<script src="web/script.js" charset="utf-8" defer></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" charset="utf-8" defer></script>
 </head>
 <body>
 	<header>
 		<nav>
-			<a href=".">
-				<h3>Moon Phases</h3>
-			</a>
-			<a href="." icon="&#xE708;">
-				Phases
-			</a>
-			<a href="" icon="&#xE7C5;">
+			<a href="https://moon.nasa.gov/moon-in-motion/moon-phases/">
+				<icon>&#xE7C5;</icon>
 				Image Gallery
 			</a>
-			<a icon="&#xED28;">
-				<input type="date" placeholder="Change date">
+			<a>
+				<icon>&#xED28;</icon>
+				<input type="date" id="date" disabled>
 			</a>
 		</nav>
-
-		<time id="timestamp">now</time>
 	</header>
 
-	<img id="moon">
+	<img id="moon" width="512px" height="512px">
 </body>
 </html>

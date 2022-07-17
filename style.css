@@ -1,0 +1,64 @@
+@font-face {
+	font-family: "Segoe Fluent Icons";
+	src: url("Segoe_Fluent_Icons.ttf");
+}
+
+html, body {
+	height: 100%;
+	background: black;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+	/* background-image: url("https://images-assets.nasa.gov/image/PIA12348/PIA12348~orig.jpg");
+	background-size: cover; */
+}
+
+#moon {
+	max-height: 50vh;
+	max-width: 50vh;
+	transition: 250ms;
+	aspect-ratio: 1/1;
+}
+
+header {
+	display: flex;
+	align-items: center;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+a {
+	text-decoration: none;
+	/* color: #86817B; */
+}
+
+nav a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+icon {
+	content: attr(icon);
+	font-family: "Segoe Fluent Icons";
+	font-size: .9em;
+	vertical-align: middle;
+}
+
+@supports (-webkit-background-clip: text) {
+	a {
+		background: radial-gradient(white, #86817B);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+	}
+}
